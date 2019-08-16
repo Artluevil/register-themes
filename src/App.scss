@@ -7,18 +7,125 @@ $form-ml: 50px;
 
 body {
   margin: 0;
+
+}
+
+.background1 {
+  background-image: url(./Images/bckg1.png);
+  width: 100%;
+  height: auto;
+}
+
+.background2 {
+  background-image: url(./Images/bckg2.png);
+  width: 100%;
+  height: auto;
+}
+
+.background3 {
+  background-image: url(./Images/bckg3.png);
+  width: 100%;
+  height: auto;
 }
 
 #register-panel {
   width: 660px;
-  height: 100%;
-  background: #ababab;
+  padding-bottom: 270px;
+  padding-top: 5px;
   margin-left: 30%;
 
 }
 
+.theme1 {
+  background: $bckg-theme1;
+  animation: 1s ease-out 0s 1 smooth1;
+}
+.theme2 {
+  background: $bckg-theme2;
+  animation: 1s ease-out 0s 1 smooth2;
+}
+.theme3 {
+  background: $bckg-theme3;
+  animation: 1s ease-out 0s 1 smooth3;
+}
+
+.themeInput1 {
+  background: #848484;
+}
+
+.themeInput2 {
+  background: #D005E1;
+}
+
+.themeInput3 {
+  background: #2EFDCB;
+}
+
+.themeButton1 {
+  color: white;
+}
+
+.themeButton2 {
+  color: #D005E1;
+}
+
+.themeButton3 {
+  color: #2EFDCB;
+}
+
+@keyframes smooth1 {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes smooth2 {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes smooth3 {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .buttons {
   position: absolute;
+  margin-left: 90%;
+}
+
+.buttons button {
+  padding: 20px 20px;
+  margin-left: 8px;
+  margin-top: 8px;
+  border: none;
+}
+
+.buttons :nth-child(1) {
+  background: linear-gradient(133.69deg, #000000 6.38%, #FFF0F0 100%);
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.buttons :nth-child(2) {
+  background: linear-gradient(133.83deg, #D005E1 -2.92%, #2A2A2B 102.13%, #000000 102.13%);
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.buttons :nth-child(3) {
+  background: linear-gradient(131.99deg, #08F0B8 14.89%, #19DADA 69.32%);
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
 }
 
 .first-name {
@@ -35,7 +142,6 @@ body {
   height: 45px;
   border-radius: 1em;
   border: none;
-  background: #848484;
 }
 .last-name input {
   margin-left: $form-ml;
@@ -43,7 +149,6 @@ body {
   height: 45px;
   border-radius: 1em;
   border: none;
-  background: #848484;
 }
 .form input {
   margin-left: $form-ml;
@@ -52,7 +157,6 @@ body {
   height: 45px;
   border-radius: 1em;
   border: none;
-  background: #848484;
 }
 
 .register-btn {
@@ -68,7 +172,6 @@ body {
   cursor: pointer;
   background: linear-gradient(106.83deg, #000000 1.48%, rgba(0, 0, 0, 0.43) 99.99%, rgba(0, 0, 0, 0) 100%);
   font-size: 24px;
-  color: white;
 }
 
 .btn-radio {
@@ -159,4 +262,9 @@ body {
 
 .genders p {
   display: inline-block;
+}
+
+h1 {
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 }
