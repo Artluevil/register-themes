@@ -32,7 +32,7 @@ body {
   width: 660px;
   padding-bottom: 270px;
   padding-top: 5px;
-  margin-left: 30%;
+  margin-left: 32.5%;
 
 }
 
@@ -110,6 +110,7 @@ body {
   padding: 20px 20px;
   margin-left: 8px;
   margin-top: 8px;
+  border-radius: 0.5em;
   border: none;
 }
 
@@ -267,4 +268,24 @@ body {
 h1 {
   -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
+}
+
+#icon {
+  position: absolute;
+  width: 144px !important;
+  height: 144px !important;
+  margin-top: 100px;
+  margin-left: 480px;
+}
+
+.icon-color1 {
+  color: black;
+}
+
+.icon-color2 {
+  color: #D005E1;
+}
+
+.icon-color3 {
+  color: rgb(35, 172, 140);
 }

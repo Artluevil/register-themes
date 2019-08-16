@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { GiAllSeeingEye } from "react-icons/gi";
 
 export default class App extends Component {
     state = {
@@ -44,6 +45,18 @@ export default class App extends Component {
         }
         else if (this.state.theme === 'theme3') {
             return 'background3'
+        }
+    }
+
+    getIconColor= () => {
+        if(this.state.theme === 'theme1') {
+            return 'icon-color1'
+        }
+        else if(this.state.theme === 'theme2') {
+            return 'icon-color2'
+        }
+        else if (this.state.theme === 'theme3') {
+            return 'icon-color3'
         }
     }
 
@@ -99,6 +112,9 @@ export default class App extends Component {
                         <div className="genders">
                             <p>Male</p>
                             <p style={{marginLeft: '95px'}}>Female</p>
+                        </div>
+                        <div>
+                            <i><GiAllSeeingEye id="icon" className={this.getIconColor()}/></i>
                         </div>
                     </div>
                 </div>
